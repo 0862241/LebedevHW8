@@ -67,7 +67,7 @@ Show2dArray(newArray);
 /*Specify a rectangular two-dimensional array. 
 Write a program that will find the string with the smallest sum of elements.
 */
-
+/*
 int[,] CreateRandom2dArray()
 {
 Console.Write("Input a number of rows: ");
@@ -130,10 +130,11 @@ void FindMinSumOfElements(int[,] array)
 Console.WriteLine(0);
 Show2dArray(newArray);
 FindMinSumOfElements(newArray);
+*/
 
 
+// Specify two matrices. Write a program that will find the product of two matrices.
 
-// Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 /*
 int rows = ReadInt("Enter the number of strings: ");
 int columns = ReadInt("Enter the number of columns: ");
@@ -189,9 +190,13 @@ for (int i = 0; i < array.GetLength(0); i++)
     }
 }
 ShowArray(resultArray);
+
 */
 
-// Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
+
+/* Form a three-dimensional array of non-repeating two-digit numbers.
+ Write a program that will output an array line by line, adding indexes of each element.
+*/
 /*
 int[,,] array = new int[2, 2, 2];
 void ShowIndex(int[,,] arr)
@@ -228,7 +233,7 @@ ShowIndex(array);
 */
 // Напишите программу, которая заполнит спирально массив 4 на 4.
 
-/*
+
 
 int[,] array = new int[4, 4];
 
@@ -248,7 +253,7 @@ void CrateSpiralArray(int[,] array, int n)
     }
 }
 
-void ShowArray(int[,] array)
+void Show2dArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -266,5 +271,5 @@ void ShowArray(int[,] array)
 }
 
 CrateSpiralArray(array, 4);
-ShowArray(array);
-*/
+Show2dArray(array);
+
